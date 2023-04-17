@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carousel with Picture Links</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Include custom CSS -->
+  <style>
+    .carousel {
+      margin: auto;
+      width: 80%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://example.com/"><img src="picture.png" alt="Picture 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://example.com/"><img src="picture2.png" alt="Picture 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://example.com/"><img src="picture3.png" alt="Picture 3"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://example.com/"><img src="picture4.png" alt="Picture 4"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://example.com/"><img src="picture5.png" alt="Picture 5"></a>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
